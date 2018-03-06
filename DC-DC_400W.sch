@@ -109,7 +109,7 @@ L R R1
 U 1 1 5A3FE435
 P 5600 2350
 F 0 "R1" H 5500 2400 50  0000 C CNN
-F 1 "402R" H 5450 2300 50  0000 C CNN
+F 1 "430R" H 5450 2300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 5530 2350 50  0001 C CNN
 F 3 "" H 5600 2350 50  0001 C CNN
 	1    5600 2350
@@ -390,7 +390,7 @@ L R R3
 U 1 1 5A7EB192
 P 5250 2350
 F 0 "R3" H 5150 2400 50  0000 C CNN
-F 1 "402R" H 5100 2300 50  0000 C CNN
+F 1 "9.1k" H 5100 2300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 5180 2350 50  0001 C CNN
 F 3 "" H 5250 2350 50  0001 C CNN
 	1    5250 2350
@@ -484,4 +484,6 @@ Connection ~ 4150 4750
 Wire Wire Line
 	4050 4850 4150 4850
 Connection ~ 4150 4850
+Text Notes 6950 2250 0    60   ~ 0
+As of datasheet in order to get 5V R1||R3 (430 ohm||6200 ohm) \nshould be equal to 402 ohm. But output voltage sets to 5.2+ volts \nwith 402 ohm. So R3 increased to 9100 ohm.
 $EndSCHEMATC
